@@ -111,6 +111,11 @@ app.post('/logout',(req,res)=>{
   res.cookie('token','').json('Loged Out')
 })
 
+
+
+
+
+
 app.post('/createBlog', uploadMiddleware.single('file'), async (req, res) => {
   const { originalname } = req.file;
   const part = originalname.split('.');
