@@ -26,7 +26,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 
 
 
-mongoose.connect('mongodb+srv://mern:11223344@cluster0.tvlj3l0.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://mern:11223344@cluster0.tvlj3l0.mongodb.net/mern', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
